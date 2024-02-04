@@ -1,55 +1,30 @@
-# Create library using react
+# React + TypeScript + Vite
 
-- This template provides a minimal setup to create a library in React using Vite.
-- This uses styledcomponents for styling
-- It uses javascript. Typescript also can be configured easily by adding relevant libraries.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Publishing the library
+Currently, two official plugins are available:
 
-Publish the library using the below command
-```bash
-  npm run publish:lib
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+
+- Configure the top-level `parserOptions` property like this:
+
+```js
+export default {
+  // other rules...
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    project: ['./tsconfig.json', './tsconfig.node.json'],
+    tsconfigRootDir: __dirname,
+  },
+}
 ```
 
-## Installation
-
-Once you have published the repo to npm, Install react-component-library-vite with npm. Feel free to change the name in package.json.
-
-```bash
-  npm install react-component-library-vite
-```
-
-## Usage/Examples
-
-Example 1:
-
-```javascript
-import { Button} from 'react-component-library-vite/components';
-
-<Button>Primary</Button>
-```
-
-Example 2: Assume we are having common styles which should be applied to any application that uses this library, we can export a css and use that in our project as below. 
-I have a customstyles.css file in my library, which I am importing in my project as: 
-
-```javascript
-import 'react-component-library-vite/customstyles.css'
-```
-
-
-## Test cases
-
-You can run test cases with the below command
-
-```bash
-  npm run test
-```
-
-## Storybook
-
-Basic storybook setup is also present and it can be run using below command
-
-```bash
-  npm run storybook
-```
-
+- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
+- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
