@@ -1,0 +1,87 @@
+{
+  "id": "gid://shopify/Customer/7982046085440",
+  "legacyResourceId": "7982046085440",
+  "displayName": "Christian Hatfield",
+  "createdAt": "2024-01-18T17:31:36Z",
+  "email": "egnition_sample_60@egnition.com",
+  "hasTimelineComment": false,
+  "locale": "en",
+  "note": null,
+  "phone": "+12423337689",
+  "firstName": "Christian",
+  "lastName": "Hatfield",
+  "numberOfOrders": "20",
+  "tags": ["egnition-sample-data", "VIP"],
+  "amountSpent": {
+    "amount": "2.3",
+    "currencyCode": "UAH"
+  },
+  "emailMarketingConsent": {
+    "marketingState": "NOT_SUBSCRIBED",
+    "consentUpdatedAt": null,
+    "marketingOptInLevel": "SINGLE_OPT_IN"
+  },
+  "orders": [
+    {
+      "id": "gid://shopify/Order/5661348102464",
+      "legacyResourceId": "5661348102464",
+      "createdAt": "2024-01-18T17:31:51Z",
+      "displayFinancialStatus": "PENDING",
+      "displayFulfillmentStatus": "UNFULFILLED",
+      "name": "#1021",
+      "customer": {
+        "lastName": "Hatfield",
+        "firstName": "Christian",
+        "displayName": "Christian Hatfield"
+      },
+      "lineItems": [
+        {
+          "id": "gid://shopify/LineItem/14438955745600",
+          "title": "THE CREATION OF ADAM | MICHELANGELO"
+        },
+        {
+          "id": "gid://shopify/LineItem/14438955778368",
+          "title": "THE NIGHT WATCH | REMBRANDT VAN RIJN"
+        }
+      ]
+    },
+    {
+      "id": "gid://shopify/Order/5661348233536",
+      "legacyResourceId": "5661348233536",
+      "createdAt": "2024-01-18T17:31:57Z",
+      "displayFinancialStatus": "PAID",
+      "displayFulfillmentStatus": "UNFULFILLED",
+      "name": "#1022",
+      "customer": {
+        "lastName": "Hatfield",
+        "firstName": "Christian",
+        "displayName": "Christian Hatfield"
+      },
+      "lineItems": [
+        {
+          "id": "gid://shopify/LineItem/14438955876672",
+          "title": "GIRL WITH A PEARL EARRING | JOHANNES VERMEER"
+        }
+      ]
+    },
+    {
+      "id": "gid://shopify/Order/5661348528448",
+      "legacyResourceId": "5661348528448",
+      "createdAt": "2024-01-18T17:32:03Z",
+      "displayFinancialStatus": "PAID",
+      "displayFulfillmentStatus": "UNFULFILLED",
+      "name": "#1023",
+      "customer": {
+        "lastName": "Hatfield",
+        "firstName": "Christian",
+        "displayName": "Christian Hatfield"
+      },
+      "lineItems": [
+        {
+          "id": "gid://shopify/LineItem/14438956433728",
+          "title": "GUERNICA | PABLO PICASSO"
+        }
+      ]
+    }
+  ]
+}
